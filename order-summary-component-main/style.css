@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: no-repeat url(/images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: no-repeat url(/images/pattern-background-mobile.svg);
+  }
+}
+
+.container {
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  width: 400px;
+  height: 580px;
+  box-shadow: hsl(224, 23%, 55%) 0px 0px 10px;
+}
+.image {
+  width: 400px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.Bold {
+  font-weight: 900;
+  margin: 10px 0px;
+  color: hsl(223, 47%, 23%);
+}
+
+.Regular {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.justify {
+  padding: 10px;
+  margin: 15px;
+}
+
+.justify-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.justify-y > p {
+  font-weight: 600;
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+}
+.justify-y > h5 {
+  font-weight: 900;
+  font-size: 14px;
+  color: hsl(223, 47%, 23%);
+}
+.justify-x {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px;
+  padding: 0px 20px;
+}
+
+.justify-x > img {
+  width: 38px;
+}
+
+.change > a {
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.change > a:hover {
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button > a {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 900;
+}
+.button > a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+button {
+  font-weight: 700;
+  min-width: 300px;
+  height: 40px;
+  margin-bottom: 30px;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  color: hsl(225, 100%, 94%);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: hsl(224, 23%, 55%) 0px 10px 20px 1px;
+}
+
+button:hover {
+  background-color: hsla(245, 75%, 52%, 0.767);
+}
